@@ -1,0 +1,16 @@
+<form>
+  <div class="mb-3">
+    <label class="form-label">Nombre</label>
+    <input type="text" class="form-control" [(ngModel)]="name" name="name">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Descripcion</label>
+    <input type="text" class="form-control" [(ngModel)]="description" name="description">
+  </div>
+  <button (click)="addGenero()" class="btn btn-primary">
+    Add
+  </button>
+  <button (click)="updateGenero()" class="btn btn-primary">
+    Update
+  </button>
+</form>
